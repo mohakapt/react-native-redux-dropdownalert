@@ -2,14 +2,7 @@ import * as React from 'react';
 import { Image, I18nManager, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 
-import disclosure from './disclosure.png';
-import details from './details.png';
-import checkmark from './checkmark.png';
-
 const icons = {
-	disclosure,
-	details,
-	checkmark,
 };
 
 const Icon = (props) => {

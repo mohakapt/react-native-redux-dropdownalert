@@ -1,17 +1,25 @@
 import * as React from 'react';
-import { Image, I18nManager, ViewPropTypes } from 'react-native';
+import { Image, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 
+import info from './info.png';
+import warn from './warn.png';
+import error from './error.png';
+import success from './success.png';
+import noConnection from './noConnection.png';
+
 const icons = {
+	info,
+	warn,
+	error,
+	success,
+	noConnection,
 };
 
 const Icon = (props) => {
 	const style = {};
 	if (props.tintColor) {
 		style.tintColor = props.tintColor;
-	}
-	if (props.name === 'disclosure' && I18nManager.isRTL) {
-		style.transform = [{ rotateY: '180deg' }];
 	}
 
 	return (
